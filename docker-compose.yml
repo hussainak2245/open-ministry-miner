@@ -1,0 +1,8 @@
+services:
+  miner:
+    build: .
+    container_name: openministry_miner
+    env_file: .env
+    ports:
+      - "8001:8001"
+    restart: unless-stopped
